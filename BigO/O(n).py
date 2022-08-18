@@ -27,3 +27,18 @@ findnemo(a100000)
 Run time operation - O(n) Linear Time.
 As number of elements in an array increases, the number of operations increases in a linear manner.
 '''
+
+def print_two_arrays(array1,array2):
+
+    for a in array1:
+        print(array1.index(a))
+
+    for b in array2:
+        print(b)
+
+array1='french'
+array2='english'
+print_two_arrays(array1,array2)
+'''
+Time complexity - O(n+m) as two inputs are looped separately.
+'''
