@@ -17,3 +17,17 @@ Every time number of elements increase, operations increase quadratically.
 When each element of a collection/array is compared with each element from another collection,
 run time operation is O(a*b).
 '''
+
+def matching_characters(array1,array2):
+
+    for i in array1:
+        for j in array2:
+            print(i,array1.index(i),array2.index(j))
+
+array1='language'
+array2='spanish'
+matching_characters(array1,array2)
+
+'''
+Run Time Operation - O(n * m)
+'''
