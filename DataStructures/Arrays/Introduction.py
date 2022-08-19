@@ -1,4 +1,4 @@
-string = ['a','b','c','d']
+string = ['a','b','c','d',12,3,8]
 
 #Insert
 string.append('e')
@@ -16,6 +16,9 @@ print(string)
 
 string.pop(2) # O(n): Elements to right of 3rd element needs to be removed.
 # Need to loop over array to reassign index.
+
+string.remove(5) #O(n)
+print(string)
 
 #Lookup
 print(string[2]) #O(1) operation as we are performing look up.
