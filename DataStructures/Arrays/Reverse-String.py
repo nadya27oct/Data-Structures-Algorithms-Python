@@ -1,3 +1,5 @@
+#Question - Given a string input, return the reversed string.
+
 # Check Input. What if input is not a string?
 # What if input is empty or 1 letter?
 
@@ -9,7 +11,7 @@ def reverse_string(string):
     return reverse
 
 
-print(reverse_string(string))
+reverse_string(string)
 
 def reverse_string_as_list(string):
 
@@ -27,5 +29,5 @@ def reverse_string_as_list(string):
 
         return ''.join(backwards)
 
-print(reverse_string_as_list(string))
+reverse_string_as_list(string)
 # Time complexity O(n)
