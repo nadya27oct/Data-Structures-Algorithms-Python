@@ -36,10 +36,10 @@ def pair_sum(nums,target):
     nums_hash = dict()
 
     for i in range(len(nums)):
-        if target - nums[i] not in nums_hash:
-            nums_hash[nums[i]] = i
+        if target - nums[i] in nums_hash:
+            return [nums_hash[target - nums[i]],i]            
         else:
-            return [nums_hash[target - nums[i]],i]
+            nums_hash[nums[i]] = i
 
 print(pair_sum(nums=[3,2,10,4],target=6))
 print(pair_sum_brute_force(nums=[3,3],target=6))
