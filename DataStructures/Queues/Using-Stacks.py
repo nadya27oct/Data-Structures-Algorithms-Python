@@ -54,11 +54,8 @@ class MyQueue:
 
 obj = MyQueue()
 push_1 = obj.push(1)
-print(push_1)
 push_2 = obj.push(2)
-print(push_2)
 push_3 = obj.push(3)
-print(push_3)
 print('Front of the queue',obj.peek())
 pop = obj.pop()
 print('element removed',pop)
