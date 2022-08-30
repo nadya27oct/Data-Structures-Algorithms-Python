@@ -34,7 +34,6 @@ class BinarySearchTree:
         insert_node = Node(value)
         if self.root == None:
             self.root = insert_node
-            print('inserted to root',self.root.value)
             return
         else:
             current_node = self.root
@@ -72,8 +71,38 @@ class BinarySearchTree:
 
             return("Not Found")
 
+    def remove(self,remove_value):
+        if not self.root:
+            return("No node to remove as Tree is empty")
+        else:
+            current_node = self.root
+            parent_node = None
+            while True:
+                if remove_value < current_node.value:
+                    parent_node = current_node
+                    current_node = current_node.left
+
+                elif remove_value > current_node.value:
+                    parent_node = current_node
+                    current_node = current_node.right
+                elif current_node.value == remove_value: # Found removal value
+        #Option 1 - Node has no right child.
+                    if current_node.right == None:
+                        if parent_node == None:
+                             self.root = current_node.left
+                             return
+                        else:
+                    # If parent > current value, make current left child, a child of parent.
+                            if parent_node.value > current_node.value:
+                                parent_node.left = current_node.left
+                    # If parent < current value, make left child a right child of parent.
+                            else:
+                                parent_node.right = current_node.left 
+                    # if (current_node.left == None) and (current_node.right == None):
+                    #     return("removed",remove_value)
 
 tree = BinarySearchTree()
+print(tree.remove(3))
 tree.insert(9)
 tree.insert(4)
 tree.insert(6)
@@ -83,3 +112,4 @@ tree.insert(15)
 tree.insert(1)
 print(tree.lookup(10))
 print(tree.lookup(15))
+print(tree.remove())
