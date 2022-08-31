@@ -20,11 +20,8 @@ def factorial_iterative(n):
         return output
 
 factorial = factorial_iterative(0)
-print(factorial)
 factorial = factorial_iterative(5)
-print(factorial)
 factorial = factorial_iterative(7)
-print(factorial)
 
 # Time complexity - O(n-2) in Iterative function.
 
@@ -37,9 +34,7 @@ def factorial(n):
     #n -= 1
 
 recursive = factorial(3)
-print(recursive)
 recursive = factorial(5)
-print(recursive)
 
 #factorial(3 * factorial(2 * factorial(1)))
-# Time complexity in Recursive function - O(n) as we call function recursively. 
+# Time complexity in Recursive function - O(n) as we call function recursively.
