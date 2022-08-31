@@ -1,12 +1,10 @@
 """
 Write two functions that finds the factorial of any number. One should be recursive and the other should use a for loop (iterative).
 If n = 4.
-n * (n-1) * (n-2) * (n-3) * (n-5)
-5 * (5-1) * (5-2) * (5-3) * (5-4)
-i=0; 0<4; factorial = 5 * 4 =
-                          20 * 3 =
-                              60 * 2 =
-                                   120 * 1 = 120
+Recursive: 5! = 5 * 4!
+                    4 * 3!
+                        3 * 2!
+                            2 * 1!
 """
 
 def factorial_iterative(n):
@@ -21,10 +19,27 @@ def factorial_iterative(n):
 
         return output
 
+factorial = factorial_iterative(0)
+print(factorial)
 factorial = factorial_iterative(5)
 print(factorial)
 factorial = factorial_iterative(7)
 print(factorial)
-factorial = factorial_iterative(0)
-print(factorial)
-# Time complexity - O(n)
+
+# Time complexity - O(n-2) in Iterative function.
+
+def factorial(n):
+
+    if n < 2:
+        return 1
+
+    return n * factorial(n-1) # We keep going until we hit the base case,n=2.
+    #n -= 1
+
+recursive = factorial(3)
+print(recursive)
+recursive = factorial(5)
+print(recursive)
+
+#factorial(3 * factorial(2 * factorial(1)))
+# Time complexity in Recursive function - O(n) as we call function recursively. 
