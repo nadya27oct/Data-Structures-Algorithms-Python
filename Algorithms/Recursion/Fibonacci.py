@@ -35,20 +35,28 @@ fib_4 = fibonacciIterative(4)
 fib_5 = fibonacciIterative(5)
 fib_8 = fibonacciIterative(8)
 fib_15 = fibonacciIterative(15)
+print('iterative 40',fibonacciIterative(40))
 
-#Time complexity - Linear O(n). Space complexity- Linear O(n)
+#Time complexity - Linear O(n-2). Space complexity- Linear O(n)
 
 
 def fibonacciRecursive(n):
 
-    if n == 0:
-        return 0
-    elif n == 1:
-        return 1
+    if n < 2:
+        return n
     else:
         return fibonacciRecursive(n-1) + fibonacciRecursive(n-2)
 
-print('recursive 2',fibonacciRecursive(2))
+print('recursive 1',fibonacciRecursive(1))
 print('recursive 3',fibonacciRecursive(3))
 print('recursive 5',fibonacciRecursive(5))
 print('recursive 10',fibonacciRecursive(10))
+print('recursive 40',fibonacciRecursive(40))
+"""
+Time complexity is O(2^n). As n increases with each additional element, the function calls increase exponentially.
+fibonacci(4)--->fibonacci(3)--->fibonacci(2)
+                            --->fibonacci(1)
+            --->fibonacci(2)--->fibonacci(1)
+                            --->fibonacci(0)
+Recursive is not an optimal solution for Finbonacci Series.
+"""
