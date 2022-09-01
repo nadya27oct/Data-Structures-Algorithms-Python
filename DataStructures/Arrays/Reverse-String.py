@@ -20,10 +20,10 @@ def reverse_string_as_list(string):
 
     else:
 
-        total_items = len(string) - 1
+        x = len(string) - 1
 
         backwards = []
-        while total_items >= 0:
+        while x >= 0:
             backwards.append(string[x])
             x -= 1
 
