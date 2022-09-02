@@ -1,9 +1,9 @@
 """
 Implement a selection sorting algorithm.
-Scanning list of items for smallest element and swap the beginning of the list with  that to front.
+Scanning list of items for smallest element and swap the smallest to beginning of the list.
 Loop through list twice to compare each element with one another.
 x = [4,5,3,0]
-First element is min. i=0=min. Then loop through elements from i+1 to last element comparing each to min.
+i=0=>8 is min. Then loop through elements from i+1 to last element comparing each to min.
 Update min after each loop.
 min = i = 0; check if x[0]>x[1]. Then min = i = 1
 """
