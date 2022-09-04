@@ -48,3 +48,6 @@ array = [5,4,13,10,7,1]
 numbers = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0]
 mergeSort(numbers)
 mergeSort(numbers)
+
+# Time complexity - O(n log n)
+# Space complexity - O(n)
