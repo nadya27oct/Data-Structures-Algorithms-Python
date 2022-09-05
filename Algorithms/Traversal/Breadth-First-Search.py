@@ -1,9 +1,13 @@
 """
 Implement Breadth First Search for tree traversal.
-We visit children before visiting grand-children.
+We visit children before visiting grand-children. 9->4->20->1->6->15->170.
+Here is the tree.
         9
   4           20
 1   6      15    170
+To implement, we save the final search output in a variable list.
+Start with adding current node value to queue.
+Append elements to list from queue: current node will go in first. Remove elements from queue based on FIFO basis.
 """
 
 class Node:
