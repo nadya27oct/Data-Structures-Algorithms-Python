@@ -1,11 +1,14 @@
 """
+Depth first algorithms we use a stack.
 Implement Depth First Search traversal for binary tree.
         9
   4           20
 1   6      15    170
-In-Order: [1,4,6,9,15,20,170]
-Pre-Order: [9,4,1,6,20,15,170] We want to push to list at beginning.
+In-Order: [1,4,6,9,15,20,170]. Left -> Node -> Right
+Pre-Order: [9,4,1,6,20,15,170] Top -> Bottom-> Left -> Right
 Post-Order: [1,6,4,15,170,20,9]
+Bottom -> Top
+Left -> Right
 """
 
 class Node:
@@ -27,15 +30,15 @@ class BinarySearchTree:
         print(node.value)
         if node.left != None:
             self.traverse_in_order(node.left,list)
-        # Once there is no more node left. We only append after we ensure that we are at the bottom of left nodes.
-        list.append(node.value)
+
+        list.append(node.value) # Once there is no more leaf nodes left, append to list.
 
         if node.right != None:
             self.traverse_in_order(node.right,list)
 
         return list
 
-    def dfs_PreOrder(self):
+    def dfs_PreOrder(self): #We want to push to list at beginning.
         return self.traverse_pre_order(self.root,[])
 
     def traverse_pre_order(self,node,list):

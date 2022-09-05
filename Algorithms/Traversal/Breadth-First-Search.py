@@ -8,6 +8,7 @@ Here is the tree.
 To implement, we save the final search output in a variable list.
 Start with adding current node value to queue.
 Append elements to list from queue: current node will go in first. Remove elements from queue based on FIFO basis.
+BFS = [9, 4, 20, 1, 6, 15, 170]
 """
 
 class Node:
