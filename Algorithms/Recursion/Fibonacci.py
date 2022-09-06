@@ -53,8 +53,9 @@ print('recursive 5',fibonacciRecursive(5))
 print('recursive 10',fibonacciRecursive(10))
 print('recursive 40',fibonacciRecursive(40))
 """
-Time complexity is O(2^n). As n increases with each additional element, the function calls increase exponentially.
-fibonacci(4)--->fibonacci(3)--->fibonacci(2)
+Space complexity is O(2^n). As n increases with each additional element, the function calls increase exponentially.
+fibonacci(4)--->fibonacci(3)--->fibonacci(2)--->fibonacci(1)
+                                            --->fibonacci(0)
                             --->fibonacci(1)
             --->fibonacci(2)--->fibonacci(1)
                             --->fibonacci(0)
