@@ -30,7 +30,7 @@ class Node:
 class Solution:
     def mergeTwoLists(self,list1,list2):
 
-        dummy = Node() # list={val:1,next:None}
+        dummy = Node() # list={val:0,next:None}
 
         curr = dummy Current needs
 
