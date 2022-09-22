@@ -12,6 +12,7 @@ output = [3,4] or [7]
         null      []      []
 
 Time complexity:
+Branching factor (levels) to height.
 Number of recursive calls O(n^m)
 Space: stack space O(m)
 """
