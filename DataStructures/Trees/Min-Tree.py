@@ -63,12 +63,12 @@ class Node:
 
         if root == None:
             return float('inf')
-        print(root.val)
+        #print(root.val)
         left = self.find_min_recursive_dfs(root.left)
 
         right = self.find_min_recursive_dfs(root.right)
 
-        print(root.val,left,right)
+        #print(root.val,left,right)
         return min(root.val,left,right)
 
 
