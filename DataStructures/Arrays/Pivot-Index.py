@@ -61,9 +61,9 @@ def pivotindex(array):
 
     return -1
 
-# print(pivotindex([1,7,3,6,5,6]))
-# print(pivotindex([1,2,3]))
-# print(pivotindex([2,1,-1]))
+pivotindex([1,7,3,6,5,6])
+pivotindex([1,2,3])
+pivotindex([2,1,-1])
 
 def pivotindex_1(array):
 
@@ -90,11 +90,11 @@ def pivotindex_1(array):
         return pivot.pop()
     return -1
 
-# print(pivotindex_1([-1,-1,0,1,1,0]))
-# print(pivotindex_1([1,7,3,6,5,6]))
-# print(pivotindex_1([-1,-1,0,0,-1,-1]))
-# print(pivotindex_1([2,1,-1]))
-# print(pivotindex_1([-4,4,10]))
+pivotindex_1([-1,-1,0,1,1,0])
+pivotindex_1([1,7,3,6,5,6])
+pivotindex_1([-1,-1,0,0,-1,-1])
+pivotindex_1([2,1,-1])
+pivotindex_1([-4,4,10])
 
 """
 [1,7,3,1,2,9]
@@ -117,4 +117,4 @@ def pivotindex_2(array):
 
 assert pivotindex_2([-1,-1,0,1,1,0]) == 5
 assert pivotindex_2([1,2,3]) == -1
-print(pivotindex_2([2,1,-1]))
+assert pivotindex_2([2,1,-1]) == 0
