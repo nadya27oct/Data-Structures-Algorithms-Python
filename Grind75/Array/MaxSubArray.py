@@ -28,7 +28,7 @@ def brute_force_subarray(array):
             if sum > max:
                 max = sum
 
-    print(max)
+    return max
 
 
 brute_force_subarray([5,4,-1,7,8])
