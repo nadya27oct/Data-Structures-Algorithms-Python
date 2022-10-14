@@ -42,8 +42,8 @@ def findKthLargest(nums, k): # [3,2,1,5,6,4], k=2
     else:
         return findKthLargest(lesser,k - len(greater) - 1)
 
-print(findKthLargest([3,2,1,5,6,4], 4))
-print(findKthLargest([3,2,1,5,6,4], 2))
+findKthLargest([3,2,1,5,6,4], 4)
+findKthLargest([3,2,1,5,6,4], 2)
 
 # nums = [1,2,3,4,5,6]; 4th largest element is nums[2] = 3
 
@@ -60,11 +60,11 @@ len(greater)+1 > k => 1 == 1, so pivot = 5
 
 function([3,2,1,5,6,4],k=4); k = arr[2]
 pivot = 4, nums = [3,2,1,5,6]; less = [3,2,1], greater = [5,6]
-len(greater) + 1 < k ==>  3 < 4; function([3,2,1],1)
+len(greater) + 1 < k ==>  3 < 4; function([3,2,1],k=1)
 pivot = 1, nums = [3,2]; less = [], greater = [3,2]
-len(greater) + 1 < k ==>  3 > 1 ; function([3,2],1)
+len(greater) + 1 < k ==>  3 > 1 ; function([3,2],k=1)
 pivot = 2, nums = [3]; less = [], greater = [3]
-len(greater) + 1 < k ==>  2 > 1 ; function([3],1)
+len(greater) + 1 < k ==>  2 > 1 ; function([3],k=1)
 pivot = 3, nums = []; less = [], greater = []
 len(greater)+1 = k, so pivot = 3
 """
