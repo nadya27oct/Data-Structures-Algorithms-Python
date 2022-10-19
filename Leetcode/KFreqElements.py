@@ -18,6 +18,17 @@ freq = {11:3, 5:1, 9:4, 30:1} k=2
 buckets = {{1: [], 2: [], 3: [], 4: [], 5: [], 6: [], 7: [], 8: [], 9: [], 10: []}}
 Add each k,v in freq to buckets where buckets[key] = v.
 {1: [5], 2: [30], 3: [11], 4: [9], 5: [], 6: [], 7: [], 8: [], 9: [], 10: []}
+
+Space:
+O(n) - n is # of elements in nums to iterate through array to make freq hash map.
+0(k) - k # of keys in freq hash map. Typically k <= n.
+O(n) - Iterate each element in bucket
+Total = O(n) space complexity
+
+Time:
+O(n) - Freq hash map
+O(n) - Buckets hash map
+O(n) - Final output in k most.
 """
 
 def kFreq(nums,k):
