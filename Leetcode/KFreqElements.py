@@ -44,8 +44,8 @@ def kFreq(nums,k):
         if buckets[n] != []:
             for num in buckets[n]:
                 k_most.append(num)
-                if len(k_most) == k:
-                    return k_most
+            if len(k_most) == k:
+                return k_most
 
 
 print(kFreq([11,11,5,9,9,8,30,30,11,30],k=2)) # {1: [8, 5], 2: [9], 3: [11, 30], 4: [], 5: [], 6: [], 7: [], 8: [], 9: [], 10: []}
