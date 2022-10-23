@@ -72,8 +72,8 @@ c.left = d
 c.right = e
 
 tree = Node()
-#print(tree.isTreeBalanced(a))
-print(tree.CheckBalanced(a))
+tree.isTreeBalanced(a)
+tree.CheckBalanced(a)
 
 a = Node(1)
 b = Node(2)
@@ -91,5 +91,5 @@ d.left = f
 d.right = g
 
 tree = Node()
-#print(tree.isTreeBalanced(a))
-#print(tree.CheckBalanced(a))
+tree.isTreeBalanced(a)
+tree.CheckBalanced(a)
